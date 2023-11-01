@@ -138,5 +138,11 @@ Googled: WAVELENGTH
 Did not make it past level 7. 
 
 ## So what, Gandalf?
+Hacking Gandalf quite clearly shows that there are vulnerabilities around AI models and it is possible to hack around them. Gandalf was clearly told to not reveal the password but hackers can circle around the problem and attempt to get it from various angles. If a user is able to find an angle that the AI does not flag as being against its rules, then it is happy to reveal the password to you.
+
+This problem obviously becomes an issue as Large Language Models are growing in popularity and are starting to be used across industries, ranging from health care to finance to insurance providers. Hacking, such systems can reveal personal information that, well, should remain personal. Privacy is therefore at risk and in order to protect it, LLMs must apply data sanitization techniques.
+
+Here is an interesting article on the topic of LLMs and data privacy.
+https://thenewstack.io/llms-and-data-privacy-navigating-the-new-frontiers-of-ai/#:~:text=LLMs%20might%20unintentionally%20disclose%20confidential,can%20help%20identify%20potential%20vulnerabilities.
 
 
