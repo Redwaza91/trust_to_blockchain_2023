@@ -1,4 +1,4 @@
-![image](https://github.com/Redwaza91/trust_to_blockchain_2023/assets/149093785/88174649-57bb-4851-b198-3bb44cff19f5)# Homework 1
+# Homework 1
 
 ## HelSec presentation
 Elias Alanko's presentation in the HelSec 2023 event was a rather interesting one. During the presentation, Elias emphasized how it is possible to hack people and organizations without the need to have any technical skills. The presentation covered more specifically a hacking/scamming method under the name Business Email Compromise or BEC, which is a broadly used term for digital corporate fraud schemes. Though when heard initially a person might image that some proper hacking is involved to compromise the email account and gain unauthorized access to it, it is not so. Not all variations require compromising the email account. BEC frauds can be divided into two categories: CEO fraud and Invoice fraud.
