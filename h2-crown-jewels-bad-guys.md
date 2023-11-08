@@ -55,10 +55,40 @@ There are various things that could potentially go wrong if the system is not pr
  3. Did we do a good enough job?
 	* The effectiveness of these measures will be continuously assessed through regular security audits, compliance checks, and real-time monitoring of systems. Any incidents or breaches will trigger incident response protocols and post-incident analysis to enhance security practices continually.
 
-## Incident analyses. 
-TO COME LATER TODAY..
+## Incident analyses: Equifax Data Breach
+
+The Equifax data breach in 2017 was a significant cyber incident where the personal and financial data of approximately 143 million Americans was compromised. Attackers exploited a vulnerability in the Apache Struts web application to gain unauthorized access to sensitive customer information. (Fruhlinger, 2020) Below is the analysis using the cyber kill chain framework:
+
+1. Reconnaissance:
+Attackers likely conducted initial reconnaissance to identify vulnerable targets. In this case, Equifax's web applications containing sensitive data.
+
+2. Weaponization:
+The attackers weaponized the vulnerability in the Apache Struts web application framework to craft a specific attack payload.
+
+3. Delivery:
+Attackers delivered the malicious payload through a targeted web application using the identified vulnerability.
+
+4. Exploitation:
+The vulnerability in the web application was exploited, providing unauthorized access to Equifax's systems.
+
+5. Installation:
+Once inside the network attackers likely installed malware or backdoors to maintain persistence and control over the compromised systems.
+
+6. Command and Control (C2):
+Attackers established command and control channels to communicate with the compromised systems which allowed them to execute commands and extract data.
+
+7. Actions on Objectives:
+With persistent access and control the attackers exfiltrated massive amounts of sensitive customer data, such as names, social security numbers, birthdays and credit card information.
 
 ## Starting a lab. Installing Debian on virtual box.
 The first step was to install virtalbox on my windows 10 machine. In order to do that I downloaded the installer and run it. After the virtualbox was installed, the next step was to download the debian image for which amd64 was the correct one for my machine. After that I opened virtualbox and created a new virtual machine, typed the name for my virtual machine "DebianTest", chose the type Linux, version Debian 64bit, memory size 2000MB and hard disc 20GB. After that I selected the downloaded Debian iso image from the virtual CDROM under the Storage tab in settings. After that I booted the machine and followed the OS installation steps.
 
 
+## References:
+Hutchins et al, 2011. "Intelligence-Driven Computer Network Defense Informed by Analysis of Adversary Campaigns and Intrusion Kill Chains". Available at: https://lockheedmartin.com/content/dam/lockheed-martin/rms/documents/cyber/LM-White-Paper-Intel-Driven-Defense.pdf
+
+Federal Trade Commission, 2022. "Equifax Data Breach Settlement". Available at: https://www.ftc.gov/enforcement/refunds/equifax-data-breach-settlement
+
+Fruhlinger, J., 2020. "Equifax data breach FAQ: What happened, who was affected, what was the impact?". Available at: https://www.csoonline.com/article/567833/equifax-data-breach-faq-what-happened-who-was-affected-what-was-the-impact.html
+
+Shostack, A., 2014. "Dive In and Threat Model!".
