@@ -55,7 +55,7 @@ There are various things that could potentially go wrong if the system is not pr
  3. Did we do a good enough job?
 	* The effectiveness of these measures will be continuously assessed through regular security audits, compliance checks, and real-time monitoring of systems. Any incidents or breaches will trigger incident response protocols and post-incident analysis to enhance security practices continually.
 
-## Incident analyses: Equifax Data Breach
+## Incident analysis: Equifax Data Breach
 
 The Equifax data breach in 2017 was a significant cyber incident where the personal and financial data of approximately 143 million Americans was compromised. Attackers exploited a vulnerability in the Apache Struts web application to gain unauthorized access to sensitive customer information. (Fruhlinger, 2020) Below is the analysis using the cyber kill chain framework:
 
