@@ -37,7 +37,7 @@ After some of trial and error I managed to find a hash value that starts with a 
 $ echo -n 'Tero9' | sha256sm
 09f884757e244d1bafa6821f62b04fe9641819850f46c0990cfdfb5eb94578c2
 ```
-![image](./images/hash_starting_with_zero_found)
+![image](./images/hash_starting_with_zero_found.png)
 
 #### How is this related to Bitcoin?
 SHA-256 is the primary hashing algorithm employed in the Bitcoin protocol. Its key role is to implement Bitcoin's Proof-of-Work mechanism. Our previous example is related to Bitcoin in the sense that since hashing is random and quite unpredictable (as noticed even the tiniest change can output an entirely different hash value) so is the mining process in Bitcoin. In Bitcoin mining the miners compete to find a block header hash that meets certain criteria. [How Bitcoin Uses Cryptography]
