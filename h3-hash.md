@@ -42,29 +42,26 @@ $ echo -n 'Tero9' | sha256sm
 #### How is this related to Bitcoin?
 SHA-256 is the primary hashing algorithm employed in the Bitcoin protocol. Its key role is to implement Bitcoin's Proof-of-Work mechanism. Our previous example is related to Bitcoin in the sense that since hashing is random and quite unpredictable (as noticed even the tiniest change can output an entirely different hash value) so is the mining process in Bitcoin. In Bitcoin mining the miners compete to find a block header hash that meets certain criteria. [How Bitcoin Uses Cryptography]
 
-!!! ADD images from trials
-
 ### Compare hash
 
 I created a file called `test.txt` in which I wrote the content 'Hello there!'. After that I printed the hash value (can be seen in the image below). After that I edited the text file and removed the '!' from the end, i.e. the contents were 'Hello there'. The new hash value of the file was completely different. 
 
 PS. I had issues copy/pasting between the linux machine and the machine that I used for writing the report, thus I am using screenshots.
 
-!!! add hello_world_text_file_hash image
+![image](./images/hello_world_text_file_hash.png)
 
-
-The noticed thing (again) is that the hash value is completely different even though only one character was removed.
+The noticed thing is that the hash value is completely different even though only one character was removed.
 
 ### Install hashcat and test that it works.
 I installed the packages `hashid`, `hashcat` and `wget` as instructed in Cracking Passwords with Hashcat. Using wget I then downloaded the Rockyou dictionary, decompressed and removed the unnecessary compressed file.
 
-!!! add hashcat_installation
-!!! add hashid_test_file
+![image](./images/hashcat_installation.png)
+![image](./images/hashid_test_file.png)
 
 For testing the hashcat I decided to hash the word 'Beautiful' using command `echo -n 'Beautiful' | sha256sum`. After that I identified the hash type using hashid and in the end I used hashcat and the Rockyou dictionary to see if it can crack my word. It was cracked.
 
-!!! add hashcat_trial_1
-!!! add hashcat_trial_2
+![image](./images/hashcat_trial_1.png)
+![image](./images/hashcat_trial_2.png)
 
 ### Crack this hash: 21232f297a57a5a743894a0e4a801fc3
 
@@ -76,27 +73,27 @@ Similarly to the previous exercise, I started by identifying the hastype for the
 
 The cracked password was 'admin'. The reason that my file shows my previously cracked hash with the word 'Beautiful' is because the hashcat command appends to the file, i.e. does not overwrite previous content.
 
-!!! add crack_the_hash_1
-!!! add crack_the_hash_2
+![image](./images/crack_the_hash_1.png)
+![image](./images/crack_the_hash_2.png)
 
 ### Crack this Windows NTLM hash: f2477a144dff4f216ab81f2ac3e3207d
 
 Using the hashid command `hashid -m f2477a144dff4f216ab81f2ac3e3207d` we determine that hte hashcat mode for the NTLM is 1000 (In the assignment it was given that the this is a windows NTLM hash). Thus, we run next the command `hashcat -m 1000 'f2477a144dff4f216ab81f2ac3e3207d' rockyou.txt -o solved`
 which manages to crack the hash to the string 'monkey'.
 
-!!! add crack_windows_hash
-!!! crack_windows_hash_cracked
+![image](./images/crack_windows_hash.png)
+![image](./images/crack_windows_hash_cracked.png)
 
 ### Try cracking this hash and comment on your hash rate $2y$18$axMtQ4N8j/NQVItQJed9uORfsUK667RAWfycwFMtDBD6zAo1Se2eu
 
 In a similar fashion to before:
 `hashid -m $2y$18$axMtQ4N8j/NQVItQJed9uORfsUK667RAWfycwFMtDBD6zAo1Se2eu` returned most likely mode being Blowfish (OpenBSD) which had a hascat mode 3200.
 
-!!! add file hash_mode_3200
+![image](./images/hash_mode_3200.png)
 
 Afterwards, I ran `hashcat -m 3200 '$2y$18$axMtQ4N8j/NQVItQJed9uORfsUK667RAWfycwFMtDBD6zAo1Se2eu' rockyou.txt -o solved` which cracked the password to '12345'.
 
-!!! add file hash_mode_3200_cracked
+![image](./images/hash_mode_3200_cracked.png)
 
 For some reason, in this exercise hascat showed the hash rate to be 0 H/s. As this is not correct, I will report the hash rate value that I obtained from the exercise 'Crack this hash: 21232f297a57a5a743894a0e4a801fc3' which was 1282.5 H/s.
 
