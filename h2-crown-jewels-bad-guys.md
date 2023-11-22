@@ -92,3 +92,5 @@ Federal Trade Commission, 2022. "Equifax Data Breach Settlement". Available at: 
 Fruhlinger, J., 2020. "Equifax data breach FAQ: What happened, who was affected, what was the impact?". Available at: https://www.csoonline.com/article/567833/equifax-data-breach-faq-what-happened-who-was-affected-what-was-the-impact.html
 
 Shostack, A., 2014. "Dive In and Threat Model!".
+
+Trust to Blockchain 2023 autumn. Available at: https://terokarvinen.com/2023/trust-to-blockchain/
