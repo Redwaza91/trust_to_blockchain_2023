@@ -104,3 +104,5 @@ Cracking Passwords with Hashcat. Available at: https://terokarvinen.com/2022/cra
 Schneier, B. 2015: Applied Cryptography: Chapter 2 - Protocol Building Blocks: subchapters "2.3 One-way Fuctions" and "2.4 One-Way Hash Functions".
 
 How Bitcoin Uses Cryptography. Available at: https://river.com/learn/how-bitcoin-uses-cryptography/ Accessed: 12.11.2023
+
+Trust to Blockchain 2023 autumn. Available at: https://terokarvinen.com/2023/trust-to-blockchain/ Accessed: 12.11.2023
