@@ -145,4 +145,6 @@ This problem obviously becomes an issue as Large Language Models are growing in 
 Here is an interesting article on the topic of LLMs and data privacy.
 https://thenewstack.io/llms-and-data-privacy-navigating-the-new-frontiers-of-ai/#:~:text=LLMs%20might%20unintentionally%20disclose%20confidential,can%20help%20identify%20potential%20vulnerabilities.
 
+### References
 
+Trust to Blockchain 2023 autumn. Available at: https://terokarvinen.com/2023/trust-to-blockchain/
